@@ -51,9 +51,29 @@ expect_length(mean_range(df= mtcars), 2)
 
 # test that the max is larger than the min
 expect_true(mean_range(mtcars)[1] < mean_range(mtcars)[2])
+
 ```
 
 
+## Practice sourcing functions
+
+```{r}
+source(here::here("src", "food_cart_functions.R"))
+
+name_cart(food = "Cantaloupe", animal = "Honking Crow")
+
+```
+
+# Source a real existing function
+```{r}
+
+source(here::here("src", "cork_oak_growth.R"))
+
+# Call function
+height_t2(3, 1, 5)
+
+
+```
 
 
 
